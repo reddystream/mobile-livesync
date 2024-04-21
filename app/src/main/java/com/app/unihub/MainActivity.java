@@ -5,8 +5,12 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.LinearLayout;
 import android.widget.ListView;
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdSize;
+import com.google.android.gms.ads.AdView;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import androidx.annotation.NonNull;
@@ -30,12 +34,43 @@ public class MainActivity extends AppCompatActivity {
 
     private ActivityMainBinding binding;
 
+    //private integration_service.AdService adService;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+
+        //implementar e ajustar
+        //AdView adView = findViewById(R.id.adView);
+        //adService = new AdService(adView);
+        //adService.loadAd();
+
+        //LinearLayout layout = new LinearLayout(this);
+        //layout.setOrientation(LinearLayout.VERTICAL);
+
+        // Create a banner ad. The ad size and ad unit ID must be set before calling loadAd.
+        //AdView mAdView = binding.adView;
+        //mAdView.setAdSize(AdSize.BANNER);
+        //mAdView.setAdUnitId("ca-app-pub-5145926574192140/7931654198");
+
+        // Create an ad request.
+        //AdRequest.Builder adRequestBuilder = new AdRequest.Builder();
+
+        // Add the AdView to the view hierarchy.
+
+
+        // Start loading the ad.
+        //mAdView.loadAd(adRequestBuilder.build());
+        //AdRequest adRequest = new AdRequest.Builder().build();
+        //AdView mAdView = findViewById(R.id.adView);
+        //mAdView.setAdUnitId("ca-app-pub-5145926574192140/7931654198");
+        //mAdView.setAdSize(AdSize.BANNER);
+        //mAdView.loadAd(adRequest);
+
+        //setContentView(layout);
 
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -65,4 +100,7 @@ public class MainActivity extends AppCompatActivity {
         NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
         NavigationUI.setupWithNavController(binding.navView, navController);
     }
+
+
+
 }
