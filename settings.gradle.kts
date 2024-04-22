@@ -19,5 +19,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "UniHub"
+rootProject.name = "LiveSync"
 include(":app")
