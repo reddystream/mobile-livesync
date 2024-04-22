@@ -42,6 +42,7 @@ dependencies {
     implementation(libs.navigation.ui)
     implementation(libs.activity)
     implementation(libs.play.services.ads.lite)
+    implementation(libs.mediarouter)
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
