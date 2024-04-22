@@ -1,4 +1,4 @@
-package com.app.unihub;
+package com.app.livesync;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -13,7 +13,7 @@ import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
-import com.app.unihub.databinding.ActivityMainBinding;
+import com.app.livesync.databinding.ActivityMainBinding;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,4 +1,4 @@
-package com.app.unihub;
+package com.app.livesync;
 
 import org.junit.Test;
 

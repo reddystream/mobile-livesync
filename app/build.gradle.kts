@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace = "com.app.unihub"
+    namespace = "com.app.livesync"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.app.unihub"
+        applicationId = "com.app.livesync"
         minSdk = 29
         targetSdk = 34
         versionCode = 1

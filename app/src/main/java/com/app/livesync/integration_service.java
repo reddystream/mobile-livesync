@@ -1,11 +1,8 @@
-package com.app.unihub;
+package com.app.livesync;
 
 import android.app.Service;
 import android.content.Intent;
 import android.os.IBinder;
-
-import com.google.android.gms.ads.AdRequest;
-import com.google.android.gms.ads.AdView;
 
 
 public class integration_service extends Service {

@@ -1,4 +1,4 @@
-package com.app.unihub;
+package com.app.livesync;
 
 import android.Manifest;
 import android.app.Activity;

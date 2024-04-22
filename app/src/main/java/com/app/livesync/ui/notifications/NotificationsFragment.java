@@ -1,4 +1,4 @@
-package com.app.unihub.ui.notifications;
+package com.app.livesync.ui.notifications;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -10,7 +10,7 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
-import com.app.unihub.databinding.FragmentNotificationsBinding;
+import com.app.livesync.databinding.FragmentNotificationsBinding;
 
 public class NotificationsFragment extends Fragment {
 
