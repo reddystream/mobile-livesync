@@ -12,6 +12,8 @@ import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.app.livesync.databinding.ActivityMainBinding;
 
@@ -64,7 +66,7 @@ public class MainActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
 
-        ListView listView = findViewById(R.id.list_view);
+        /*ListView listView = findViewById(R.id.list_view);
         List<String> menuItens = new ArrayList<>();
         menuItens.add("Item 01");
         menuItens.add("Item 02");
@@ -78,11 +80,31 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent = new Intent(MainActivity.this, CameraPreviewActivity.class);
                 startActivity(intent);
             }
-        });
+        }); */
 
         //BottomNavigationView navView = findViewById(R.id.nav_view);
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
+
+
+        RecyclerView recyclerView = findViewById(R.id.recyclerView);
+        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+        // Supondo que liveList seja a lista de objetos Live que você deseja exibir no RecyclerView
+
+// Criar uma lista de Live e adicionar alguns valores de exemplo
+        List<Live> liveList = new ArrayList<>();
+        liveList.add(new Live("Live 1", "Descrição da Live 1"));
+        liveList.add(new Live("Live 2", "Descrição da Live 2"));
+        liveList.add(new Live("Live 3", "Descrição da Live 3"));
+
+// Criar uma instância do adaptador LiveAdapter e passar a lista de Live como argumento
+        LiveAdapter adapter = new LiveAdapter(liveList, this);
+
+// Configurar o RecyclerView para usar o adaptador
+        recyclerView.setAdapter(adapter);
+
+
+
         AppBarConfiguration appBarConfiguration = new AppBarConfiguration.Builder(
                 R.id.navigation_home, R.id.navigation_dashboard, R.id.navigation_notifications)
                 .build();
