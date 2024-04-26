@@ -12,6 +12,7 @@ import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
+import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -88,7 +89,9 @@ public class MainActivity extends AppCompatActivity {
 
 
         RecyclerView recyclerView = findViewById(R.id.recyclerView);
-        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+        //recyclerView.setLayoutManager(new LinearLayoutManager(this));
+        GridLayoutManager layoutManager = new GridLayoutManager(this, 2);
+        recyclerView.setLayoutManager(layoutManager);
         // Supondo que liveList seja a lista de objetos Live que você deseja exibir no RecyclerView
 
 // Criar uma lista de Live e adicionar alguns valores de exemplo
@@ -96,6 +99,9 @@ public class MainActivity extends AppCompatActivity {
         liveList.add(new Live("Live 1", "Descrição da Live 1"));
         liveList.add(new Live("Live 2", "Descrição da Live 2"));
         liveList.add(new Live("Live 3", "Descrição da Live 3"));
+        liveList.add(new Live("Live 4", "Descrição da Live 4"));
+        liveList.add(new Live("Live 5", "Descrição da Live 5"));
+        liveList.add(new Live("Live 6", "Descrição da Live 6"));
 
 // Criar uma instância do adaptador LiveAdapter e passar a lista de Live como argumento
         LiveAdapter adapter = new LiveAdapter(liveList, this);
