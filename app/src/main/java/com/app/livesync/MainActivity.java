@@ -90,8 +90,8 @@ public class MainActivity extends AppCompatActivity {
 
         RecyclerView recyclerView = findViewById(R.id.recyclerView);
         //recyclerView.setLayoutManager(new LinearLayoutManager(this));
-        GridLayoutManager layoutManager = new GridLayoutManager(this, 2);
-        recyclerView.setLayoutManager(layoutManager);
+       // GridLayoutManager layoutManager = new GridLayoutManager(this, 2);
+       // recyclerView.setLayoutManager(layoutManager);
         // Supondo que liveList seja a lista de objetos Live que você deseja exibir no RecyclerView
 
 // Criar uma lista de Live e adicionar alguns valores de exemplo
