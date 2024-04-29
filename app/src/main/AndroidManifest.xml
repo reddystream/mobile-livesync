@@ -27,7 +27,7 @@
             android:value="ca-app-pub-5145926574192140~1635840593" />
 
         <service
-            android:name=".integration_service"
+            android:name=".services.integration_service"
             android:enabled="true"
             android:exported="true" />
 

@@ -1,4 +1,4 @@
-package com.app.livesync.ui.dashboard;
+package com.app.livesync.viewmodels;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;

@@ -11,6 +11,7 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
 import com.app.livesync.databinding.FragmentHomeBinding;
+import com.app.livesync.viewmodels.HomeViewModel;
 
 public class HomeFragment extends Fragment {
 

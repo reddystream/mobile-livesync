@@ -8,6 +8,24 @@
 
     <!--<include layout="@layout/banner_ads"/> -->
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Outros componentes do layout -->
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="58dp"
+            android:scrollbars="none">
+
+            <!-- Inclua o layout de títulos aqui -->
+            <include layout="@layout/titles_layout" />
+        </HorizontalScrollView>
+    </RelativeLayout>
+
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="0dp"
@@ -33,7 +51,7 @@
             android:id="@+id/recyclerView"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginTop="60dp"
+            android:layout_marginTop="120dp"
             app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
             app:spanCount="2"
             />

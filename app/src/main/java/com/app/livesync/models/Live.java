@@ -1,4 +1,4 @@
-package com.app.livesync;
+package com.app.livesync.models;
     public class Live {
         private String title;
         private String description;

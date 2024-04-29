@@ -1,4 +1,4 @@
-package com.app.livesync;
+package com.app.livesync.services;
 
 import android.app.Service;
 import android.content.Intent;

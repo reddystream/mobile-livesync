@@ -1,22 +1,17 @@
 package com.app.livesync;
 
-import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
-import android.widget.ListView;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
-import androidx.recyclerview.widget.GridLayoutManager;
-import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.app.livesync.databinding.ActivityMainBinding;
+import com.app.livesync.models.Live;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -102,6 +97,12 @@ public class MainActivity extends AppCompatActivity {
         liveList.add(new Live("Live 4", "Descrição da Live 4"));
         liveList.add(new Live("Live 5", "Descrição da Live 5"));
         liveList.add(new Live("Live 6", "Descrição da Live 6"));
+        liveList.add(new Live("Live 7", "Descrição da Live 7"));
+        liveList.add(new Live("Live 8", "Descrição da Live 8"));
+        liveList.add(new Live("Live 9", "Descrição da Live 9"));
+        liveList.add(new Live("Live 10", "Descrição da Live 10"));
+        liveList.add(new Live("Live 11", "Descrição da Live 11"));
+        liveList.add(new Live("Live 12", "Descrição da Live 12"));
 
 // Criar uma instância do adaptador LiveAdapter e passar a lista de Live como argumento
         LiveAdapter adapter = new LiveAdapter(liveList, this);

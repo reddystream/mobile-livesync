@@ -11,6 +11,7 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
 import com.app.livesync.databinding.FragmentNotificationsBinding;
+import com.app.livesync.viewmodels.NotificationsViewModel;
 
 public class NotificationsFragment extends Fragment {
 
