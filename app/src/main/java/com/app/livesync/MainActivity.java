@@ -110,8 +110,6 @@ public class MainActivity extends AppCompatActivity {
 // Configurar o RecyclerView para usar o adaptador
         recyclerView.setAdapter(adapter);
 
-
-
         AppBarConfiguration appBarConfiguration = new AppBarConfiguration.Builder(
                 R.id.navigation_home, R.id.navigation_dashboard, R.id.navigation_notifications)
                 .build();
@@ -120,6 +118,5 @@ public class MainActivity extends AppCompatActivity {
         NavigationUI.setupWithNavController(binding.navView, navController);
     }
 
-
-
 }
+
